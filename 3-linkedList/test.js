@@ -7,4 +7,5 @@ list.append('Maxwell');
 list.append('Sophie');
 list.append('Oliver');
 
-for (let val of list) console.log(val);
+for (let val of list) console.log(val); // => Nathan Garden Maxwell Sophie Oliver
+
