@@ -160,4 +160,14 @@ class LinkedList {
     toString(callback) {
         return this.toArray().map(node => node.toString(callback)).toString()
     }
+
+    *[Symbol.iterator]() {
+        let current = this.head;
+        while (current) {
+            yield current.value;
+            current = current.next;
+        }
+    }
 }
+
+module.exports = {LinkedList};
