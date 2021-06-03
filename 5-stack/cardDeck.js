@@ -1,4 +1,4 @@
-const CARD_NAMES = ['A', '2', '3', '4', '5', '6', '7', '8', '9', 'J', 'Q', 'K'];
+const CARD_NAMES = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
 const CARD_SUITS = ['Hearts', 'Spades', 'Diamonds', 'Clubs'];
 
 class Card {
@@ -34,7 +34,7 @@ class Deck {
         for (let i = 0; i < deck.length; i++) {
             const randomIndex = Math.floor(deck.length * Math.random());
             result.push(deck[randomIndex]);
-            deck.slice(randomIndex, 1);
+            deck.splice(randomIndex, 1);
         }
         return this._deck = result;
     }
