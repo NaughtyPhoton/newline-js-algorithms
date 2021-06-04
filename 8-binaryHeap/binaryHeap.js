@@ -74,6 +74,9 @@ class MinHeap {
     heapifyUp(customStartIndex = null) {
         let currentIndex = customStartIndex || this.heapContainer.length - 1;
 
+        const p = this.parent(currentIndex);
+        const h = this.heapContainer[currentIndex];
+
         while (
             this.hasParent(currentIndex) &&
             this.compare.greaterThan(this.parent(currentIndex), this.heapContainer[currentIndex])
@@ -189,7 +192,7 @@ class MinHeap {
      * @return {*}
      */
     parent(childIndex) {
-        return this.heapContainer[this.getRightChildIndex(childIndex)];
+        return this.heapContainer[this.getParentIndex(childIndex)];
     }
 
     /**
@@ -224,7 +227,15 @@ class MinHeap {
         return foundItemIndices;
     }
 
-    toString() {
-        return this.heapContainer.toString();
+    /**
+     * @param {Function} cb
+     * @return {string}
+     */
+    toString(cb = null) {
+        if (cb) return this.heapContainer.map(cb).toString();
+        else return this.heapContainer.toString();
     }
 }
+
+
+module.exports = {MinHeap};
