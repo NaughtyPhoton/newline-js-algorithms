@@ -37,6 +37,10 @@ class PriorityQueue extends MinHeap {
         this.add(item, priority);
         return this;
     }
+
+    * [Symbol.iterator]() {
+        while (this.peek()) yield this.poll();
+    }
 }
 
 module.exports = {PriorityQueue};

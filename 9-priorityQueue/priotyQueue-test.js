@@ -17,9 +17,8 @@ notSortedCities.forEach(city => priorityQueue.add(city, city.population));
 // Now let's fetch cities from priority queue one by one and putting them into the
 // sortedCities array. We're expecting the cities bing polled in population increasing order.
 const sortedCities = [];
-while (priorityQueue.peek()) {
-    // While we can peek something from the queue it would mean that queue is not empty yet.
-    sortedCities.push(priorityQueue.poll());
+for (const city of priorityQueue) {
+    sortedCities.push(city);
 }
 
 // We're expecting the sortedCities to be truly sorted in population increasing order.
