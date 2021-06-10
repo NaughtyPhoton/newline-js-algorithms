@@ -1,3 +1,6 @@
+
+
+
 function isPrime(n, current = 2) {
     if (!Number.isInteger(n) || n <= 1) return false;
     if (current > Math.sqrt(n)) return true;
