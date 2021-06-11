@@ -11,3 +11,6 @@ function isPrime(n, current = 2) {
 const logIsPrime = (_, n) => console.log(`${n}: ${isPrime(n)}`);
 
 const range = Array(30).fill(0).map(logIsPrime);
+
+
+
