@@ -18,3 +18,5 @@ export function binarySearch(sortedArray, seekElement, comparatorCallback) {
     }
     return -1;
 }
+
+
