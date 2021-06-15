@@ -37,7 +37,7 @@ class Comparator {
      * @return {boolean}
      */
     lessThan(a, b) {
-        return this.compare(a, b) > 0;
+        return this.compare(a, b) < 0;
     }
 
     /**
