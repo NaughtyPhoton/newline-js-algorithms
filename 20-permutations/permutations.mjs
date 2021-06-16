@@ -22,6 +22,7 @@ export default function permutateWithRepetitions(
         permutationLength - 1,
     );
 
+    
     // Recursively go through all options and join it to the smaller permutations.
     permutationOptions.forEach((currentOption) => {
         // Concatenate current options to smaller permutations.
