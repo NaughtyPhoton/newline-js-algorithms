@@ -2,7 +2,7 @@
 
 /**
  * @param {*[]} comboOptions - original set that we will take elements from.
- * @param {number} comboLength - the length of combinations we're going to make.
+ * @param {number} comboLength - The length of combinations we're going to make.
  * @return {*[]}
  */
 export function combineWithoutRepetitions(comboOptions, comboLength) {
