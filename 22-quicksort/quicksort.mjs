@@ -12,7 +12,7 @@ export default function quicksort(originalArray, comparatorCallback = null) {
     const pivotElement = array.shift();
     const centerArray = [pivotElement];
 
-    // split all elements amongst left, right, center arrays
+    // Split all elements amongst left, right, center arrays.
     while (array.length) {
         const currentElement = array.shift();
         if (comparator.equal(currentElement, pivotElement)) {
