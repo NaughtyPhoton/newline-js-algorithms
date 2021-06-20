@@ -15,7 +15,6 @@ export class BinaryTreeNode {
         this.left = node;
         return this;
     }
-
     /**
      * @param {BinaryTreeNode} node
      */
