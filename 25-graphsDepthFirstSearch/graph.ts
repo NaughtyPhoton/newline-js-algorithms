@@ -1,4 +1,10 @@
-class Graph {
+import {GraphVertex} from "./GraphVertex";
+
+export class Graph {
+    private readonly vertices: {[key: string]: GraphVertex};
+    private readonly edges: {};
+    private readonly isDirected: boolean;
+
     constructor(isDirected = false) {
         this.vertices = {};
         this.edges = {};
@@ -79,5 +85,3 @@ class Graph {
         return Object.keys(this.vertices).toString();
     }
 }
-
-module.exports = {Graph};

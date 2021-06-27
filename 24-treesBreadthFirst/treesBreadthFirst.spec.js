@@ -2,6 +2,7 @@
 exports.__esModule = true;
 var binaryTreeNode_1 = require("./binaryTreeNode");
 var treesBreadthFirst_1 = require("./treesBreadthFirst");
+require("regenerator-runtime/runtime");
 describe('Binary Tree Breadth First', function () {
     // Create tree nodes.
     var nodeA = new binaryTreeNode_1.BinaryTreeNode('A');

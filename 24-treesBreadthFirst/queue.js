@@ -1,5 +1,4 @@
 "use strict";
-
 exports.__esModule = true;
 exports.Queue = void 0;
 var linkedList_1 = require("./linkedList");

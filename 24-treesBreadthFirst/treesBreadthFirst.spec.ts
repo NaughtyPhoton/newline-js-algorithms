@@ -1,5 +1,6 @@
 import {BinaryTreeNode} from "./binaryTreeNode";
 import {breadthFirstSearch} from "./treesBreadthFirst";
+import 'regenerator-runtime/runtime'
 
 describe('Binary Tree Breadth First', () => {
 
