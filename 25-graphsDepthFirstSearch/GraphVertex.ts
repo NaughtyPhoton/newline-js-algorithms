@@ -1,5 +1,7 @@
 import {LinkedList} from "./linkedList";
 
+type GraphVertexWithEdgeWeight = GraphVertex & {edge: {weight: number}}
+
 export class GraphVertex {
     private value: any;
     private edges: any;
@@ -27,7 +29,7 @@ export class GraphVertex {
         return !!edgeNode;
     }
 
-    getNeighbors(): GraphVertex[] {
+    getNeighbors(): GraphVertexWithEdgeWeight[] {
         const edges = this.edges.toArray();
 
         /** @param {LinkedListNode} node */
